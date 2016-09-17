@@ -10,7 +10,7 @@ test:
   override:
     - docker run qinmux/sample-node npm test
 
-development:
+deployment:
   production:
     branch: master
     commands:
