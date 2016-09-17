@@ -1,7 +1,7 @@
 #!/bin/bash
 docker push qinmux/sample-node
 
-ssh ubuntu@54.222.179.18 << EOF
+ssh ubuntu@$DAO_CLOUD_SERVER << EOF
 sudo docker pull qinmux/sample-node:latest
 sudo docker stop web || true
 sudo docker rm web || true
